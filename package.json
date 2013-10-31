@@ -4,11 +4,15 @@
   "description": "React.js demo app",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "preinstall": "bower install --save react",
+    "start": "beefy --live index.js:bundle.js 8181 -- -t reactify"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/trodrigues/react-demo-app.git"
+  },
+  "dependencies": {
+    "reactify": "~0.4.0"
   },
   "keywords": [
     "react.js",
